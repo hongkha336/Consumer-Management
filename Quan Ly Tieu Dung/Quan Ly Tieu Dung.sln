@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quan Ly Tieu Dung", "DXApplication1\DXApplication1\Quan Ly Tieu Dung.csproj", "{110F9796-C79C-4A27-96E7-AF581AD9EE34}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Quan Ly Tieu Dung ver5", "Quan Ly Tieu Dung ver5\Quan Ly Tieu Dung ver5.vdproj", "{04A851F9-FABE-4F89-A6DA-E27A4D26071B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{110F9796-C79C-4A27-96E7-AF581AD9EE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110F9796-C79C-4A27-96E7-AF581AD9EE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110F9796-C79C-4A27-96E7-AF581AD9EE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110F9796-C79C-4A27-96E7-AF581AD9EE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A851F9-FABE-4F89-A6DA-E27A4D26071B}.Debug|Any CPU.ActiveCfg = Debug
+		{04A851F9-FABE-4F89-A6DA-E27A4D26071B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

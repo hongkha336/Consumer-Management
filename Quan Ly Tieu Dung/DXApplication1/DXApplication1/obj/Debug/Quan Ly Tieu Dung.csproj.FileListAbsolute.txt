@@ -1,0 +1,71 @@
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DXApplication1.exe
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DXApplication1.pdb
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\Quan Ly Tieu Dung.csprojResolveAssemblyReference.cache
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.Properties.Resources.resources
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\Quan Ly Tieu Dung.csproj.GenerateResource.Cache
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe.licenses
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.pdb
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DXApplication1.exe.config
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.dll
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.xml
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmDangNhap.resources
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmTrangChu.resources
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmNewChiTieu.resources
+C:\Users\Dang Nguyen Hong Kha\Desktop\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmDangKy.resources
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DXApplication1.exe.config
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.pdb
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DXApplication1.exe
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DXApplication1.pdb
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.SqlServer.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\EntityFramework.SqlServer.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\Quan Ly Tieu Dung.csprojResolveAssemblyReference.cache
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmDangKy.resources
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmDangNhap.resources
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmNewChiTieu.resources
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.frmTrangChu.resources
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.Properties.Resources.resources
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\Quan Ly Tieu Dung.csproj.GenerateResource.Cache
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\obj\Debug\DXApplication1.exe.licenses
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.BonusSkins.v15.1.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Data.v15.1.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Sparkline.v15.1.Core.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Utils.v15.1.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.XtraBars.v15.1.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.XtraEditors.v15.1.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Printing.v15.1.Core.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Data.v15.1.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Utils.v15.1.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Sparkline.v15.1.Core.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.XtraBars.v15.1.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.XtraEditors.v15.1.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\DevExpress.Printing.v15.1.Core.xml
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\de\DevExpress.Data.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\es\DevExpress.Data.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ja\DevExpress.Data.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ru\DevExpress.Data.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\de\DevExpress.Utils.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\es\DevExpress.Utils.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ja\DevExpress.Utils.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ru\DevExpress.Utils.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\de\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\es\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ja\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ru\DevExpress.Sparkline.v15.1.Core.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\de\DevExpress.XtraBars.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\es\DevExpress.XtraBars.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ja\DevExpress.XtraBars.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ru\DevExpress.XtraBars.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\de\DevExpress.XtraEditors.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\es\DevExpress.XtraEditors.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ja\DevExpress.XtraEditors.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ru\DevExpress.XtraEditors.v15.1.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\de\DevExpress.Printing.v15.1.Core.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\es\DevExpress.Printing.v15.1.Core.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ja\DevExpress.Printing.v15.1.Core.resources.dll
+D:\2018_HK2\2018_TU HOC WINFORM\Quan Ly Tieu Dung\DXApplication1\DXApplication1\bin\Debug\ru\DevExpress.Printing.v15.1.Core.resources.dll

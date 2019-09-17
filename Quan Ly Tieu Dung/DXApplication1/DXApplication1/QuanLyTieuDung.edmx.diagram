@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c9366bfdae6d4b699424e1397e6b9dc7" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.LanChiTieu" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Ngay" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NoTot" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.NoXau" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TienTrongVi" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_LanChiTieu_Ngay" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_LanChiTieu_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TienTrongVi_Ngay" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NoTot_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_NoXau_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

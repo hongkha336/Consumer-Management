@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="LanChiTieu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Ngay" Type="date" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Money" Type="int" />
+          <Property Name="Reasion" Type="nvarchar" MaxLength="80" />
+          <Property Name="UserID" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Ngay">
+          <Key>
+            <PropertyRef Name="ID_Time" />
+          </Key>
+          <Property Name="ID_Time" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NoTot">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Money" Type="int" />
+          <Property Name="ThanhToan" Type="bit" Nullable="false" />
+          <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Ghichu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="NoXau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Money" Type="int" />
+          <Property Name="ThanhToan" Type="bit" Nullable="false" />
+          <Property Name="UserID" Type="varchar" MaxLength="50" />
+          <Property Name="Ghichu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TienTrongVi">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Ngay" Type="date" Nullable="false" />
+          <Property Name="SoTien" Type="int" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="userPassWord" Type="varchar" MaxLength="50" />
+          <Property Name="userName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_LanChiTieu_Ngay">
+          <End Role="Ngay" Type="Self.Ngay" Multiplicity="0..1" />
+          <End Role="LanChiTieu" Type="Self.LanChiTieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ngay">
+              <PropertyRef Name="ID_Time" />
+            </Principal>
+            <Dependent Role="LanChiTieu">
+              <PropertyRef Name="Ngay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LanChiTieu_User">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="LanChiTieu" Type="Self.LanChiTieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="LanChiTieu">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NoTot_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="NoTot" Type="Self.NoTot" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="NoTot">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NoXau_User">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="NoXau" Type="Self.NoXau" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="NoXau">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TienTrongVi_Ngay">
+          <End Role="Ngay" Type="Self.Ngay" Multiplicity="1" />
+          <End Role="TienTrongVi" Type="Self.TienTrongVi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ngay">
+              <PropertyRef Name="ID_Time" />
+            </Principal>
+            <Dependent Role="TienTrongVi">
+              <PropertyRef Name="Ngay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="LanChiTieu" EntityType="Self.LanChiTieu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ngay" EntityType="Self.Ngay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NoTot" EntityType="Self.NoTot" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NoXau" EntityType="Self.NoXau" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TienTrongVi" EntityType="Self.TienTrongVi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_LanChiTieu_Ngay" Association="Self.FK_LanChiTieu_Ngay">
+            <End Role="Ngay" EntitySet="Ngay" />
+            <End Role="LanChiTieu" EntitySet="LanChiTieu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LanChiTieu_User" Association="Self.FK_LanChiTieu_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="LanChiTieu" EntitySet="LanChiTieu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NoTot_User" Association="Self.FK_NoTot_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="NoTot" EntitySet="NoTot" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NoXau_User" Association="Self.FK_NoXau_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="NoXau" EntitySet="NoXau" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TienTrongVi_Ngay" Association="Self.FK_TienTrongVi_Ngay">
+            <End Role="Ngay" EntitySet="Ngay" />
+            <End Role="TienTrongVi" EntitySet="TienTrongVi" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="LanChiTieu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Ngay" Type="DateTime" Precision="0" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Money" Type="Int32" />
+          <Property Name="Reasion" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Ngay1" Relationship="Self.FK_LanChiTieu_Ngay" FromRole="LanChiTieu" ToRole="Ngay" />
+          <NavigationProperty Name="User" Relationship="Self.FK_LanChiTieu_User" FromRole="LanChiTieu" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Ngay">
+          <Key>
+            <PropertyRef Name="ID_Time" />
+          </Key>
+          <Property Name="ID_Time" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="LanChiTieux" Relationship="Self.FK_LanChiTieu_Ngay" FromRole="Ngay" ToRole="LanChiTieu" />
+          <NavigationProperty Name="TienTrongVis" Relationship="Self.FK_TienTrongVi_Ngay" FromRole="Ngay" ToRole="TienTrongVi" />
+        </EntityType>
+        <EntityType Name="NoTot">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Money" Type="Int32" />
+          <Property Name="ThanhToan" Type="Boolean" Nullable="false" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Ghichu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="User" Relationship="Self.FK_NoTot_User" FromRole="NoTot" ToRole="User" />
+        </EntityType>
+        <EntityType Name="NoXau">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Money" Type="Int32" />
+          <Property Name="ThanhToan" Type="Boolean" Nullable="false" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ghichu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="User" Relationship="Self.FK_NoXau_User" FromRole="NoXau" ToRole="User" />
+        </EntityType>
+        <EntityType Name="TienTrongVi">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Ngay" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="SoTien" Type="Int32" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Ngay1" Relationship="Self.FK_TienTrongVi_Ngay" FromRole="TienTrongVi" ToRole="Ngay" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="userID" />
+          </Key>
+          <Property Name="userID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="userPassWord" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="userName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="LanChiTieux" Relationship="Self.FK_LanChiTieu_User" FromRole="User" ToRole="LanChiTieu" />
+          <NavigationProperty Name="NoTots" Relationship="Self.FK_NoTot_User" FromRole="User" ToRole="NoTot" />
+          <NavigationProperty Name="NoXaus" Relationship="Self.FK_NoXau_User" FromRole="User" ToRole="NoXau" />
+        </EntityType>
+        <Association Name="FK_LanChiTieu_Ngay">
+          <End Role="Ngay" Type="Self.Ngay" Multiplicity="0..1" />
+          <End Role="LanChiTieu" Type="Self.LanChiTieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ngay">
+              <PropertyRef Name="ID_Time" />
+            </Principal>
+            <Dependent Role="LanChiTieu">
+              <PropertyRef Name="Ngay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LanChiTieu_User">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="LanChiTieu" Type="Self.LanChiTieu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="LanChiTieu">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TienTrongVi_Ngay">
+          <End Role="Ngay" Type="Self.Ngay" Multiplicity="1" />
+          <End Role="TienTrongVi" Type="Self.TienTrongVi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ngay">
+              <PropertyRef Name="ID_Time" />
+            </Principal>
+            <Dependent Role="TienTrongVi">
+              <PropertyRef Name="Ngay" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NoTot_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="NoTot" Type="Self.NoTot" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="NoTot">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NoXau_User">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="NoXau" Type="Self.NoXau" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="userID" />
+            </Principal>
+            <Dependent Role="NoXau">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Quan_Ly_Tieu_DungEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="LanChiTieux" EntityType="Self.LanChiTieu" />
+          <EntitySet Name="Ngays" EntityType="Self.Ngay" />
+          <EntitySet Name="NoTots" EntityType="Self.NoTot" />
+          <EntitySet Name="NoXaus" EntityType="Self.NoXau" />
+          <EntitySet Name="TienTrongVis" EntityType="Self.TienTrongVi" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK_LanChiTieu_Ngay" Association="Self.FK_LanChiTieu_Ngay">
+            <End Role="Ngay" EntitySet="Ngays" />
+            <End Role="LanChiTieu" EntitySet="LanChiTieux" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LanChiTieu_User" Association="Self.FK_LanChiTieu_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="LanChiTieu" EntitySet="LanChiTieux" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TienTrongVi_Ngay" Association="Self.FK_TienTrongVi_Ngay">
+            <End Role="Ngay" EntitySet="Ngays" />
+            <End Role="TienTrongVi" EntitySet="TienTrongVis" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NoTot_User" Association="Self.FK_NoTot_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="NoTot" EntitySet="NoTots" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NoXau_User" Association="Self.FK_NoXau_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="NoXau" EntitySet="NoXaus" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Quan_Ly_Tieu_DungEntities3">
+          <EntitySetMapping Name="LanChiTieux">
+            <EntityTypeMapping TypeName="Model.LanChiTieu">
+              <MappingFragment StoreEntitySet="LanChiTieu">
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Money" ColumnName="Money" />
+                <ScalarProperty Name="Reasion" ColumnName="Reasion" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ngays">
+            <EntityTypeMapping TypeName="Model.Ngay">
+              <MappingFragment StoreEntitySet="Ngay">
+                <ScalarProperty Name="ID_Time" ColumnName="ID_Time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NoTots">
+            <EntityTypeMapping TypeName="Model.NoTot">
+              <MappingFragment StoreEntitySet="NoTot">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Money" ColumnName="Money" />
+                <ScalarProperty Name="ThanhToan" ColumnName="ThanhToan" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NoXaus">
+            <EntityTypeMapping TypeName="Model.NoXau">
+              <MappingFragment StoreEntitySet="NoXau">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Money" ColumnName="Money" />
+                <ScalarProperty Name="ThanhToan" ColumnName="ThanhToan" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TienTrongVis">
+            <EntityTypeMapping TypeName="Model.TienTrongVi">
+              <MappingFragment StoreEntitySet="TienTrongVi">
+                <ScalarProperty Name="Ngay" ColumnName="Ngay" />
+                <ScalarProperty Name="SoTien" ColumnName="SoTien" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="Model.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="userID" ColumnName="userID" />
+                <ScalarProperty Name="userPassWord" ColumnName="userPassWord" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
